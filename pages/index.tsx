@@ -2,6 +2,10 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
+import Header from 'Components/header';
+import Footer from 'Components/footer';
+
+
 const Home: NextPage = () => (
   <div>
     <Head>
@@ -10,11 +14,15 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
+    <Header />
+
     <div>
       <h1>
-        Awesome
+        Content
       </h1>
     </div>
+
+    <Footer />
   </div>
 );
 
