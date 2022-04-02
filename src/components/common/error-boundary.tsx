@@ -10,8 +10,8 @@ type ErrorBoundaryState = {
 };
 
 
-class ErrorBoundary extends React.Component<any, ErrorBoundaryState> {
-  constructor(props: any) {
+class ErrorBoundary extends React.Component<unknown, ErrorBoundaryState> {
+  constructor(props: unknown) {
     super(props);
     this.state = { hasError: false, error: '' };
   }

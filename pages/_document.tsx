@@ -10,8 +10,10 @@ import createEmotionServer from '@emotion/server/create-instance';
 import theme from '@ui-lib/theme';
 import createEmotionCache from '@ui-lib/create-emotion-cache';
 
+import { TODO_ANY } from 'Utils/index';
+
 type MyDocumentProps = {
-  emotionStyleTags: any;
+  emotionStyleTags: TODO_ANY;
 };
 
 export default class MyDocument extends Document<MyDocumentProps> {
@@ -72,7 +74,7 @@ MyDocument.getInitialProps = async (ctx) => {
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
   ctx.renderPage = () => originalRenderPage({
-    enhanceApp: (App: any) => function EnhanceApp(props) {
+    enhanceApp: (App: TODO_ANY) => function EnhanceApp(props) {
       return <App emotionCache={cache} {...props} />;
     },
   });
