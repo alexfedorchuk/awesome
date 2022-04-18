@@ -7,7 +7,6 @@ import Page from 'Components/page';
 
 import Routes from 'Config/routes';
 
-
 const Home: NextPage = () => (
   <Page>
     <Head>
