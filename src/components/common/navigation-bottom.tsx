@@ -6,10 +6,10 @@ const NavigationBottom: React.FC = () => (
   <Box sx={{
     position: 'fixed',
     bottom: 0,
-    paddingBottom: 'env(safe-area-inset-bottom)',
     width: '100%',
     backgroundColor: '#fff',
-    py: 2,
+    pt: 2,
+    pb: 'calc(16px + env(safe-area-inset-bottom))',
     borderTop: 1,
   }}
   >
