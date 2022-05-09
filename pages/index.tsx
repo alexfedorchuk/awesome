@@ -15,7 +15,7 @@ const Home: NextPage = () => (
     <Head>
       <title>Welcome to Awesome!</title>
     </Head>
-    <Container>
+    <Container sx={{ pb: 'calc(57px + env(safe-area-inset-bottom))' }}>
       <p>
         Content
         <Link href={Routes.About}>
@@ -54,7 +54,7 @@ const Home: NextPage = () => (
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, hic iusto esse optio ducimus cum minus dolorum expedita odio! Ipsum ut velit inventore esse iste nemo cupiditate, aliquid doloribus deleniti!
       </p>
-      <p>
+      <p style={{ margin: 0 }}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, hic iusto esse optio ducimus cum minus dolorum expedita odio! Ipsum ut velit inventore esse iste nemo cupiditate, aliquid doloribus deleniti!
       </p>
     </Container>
