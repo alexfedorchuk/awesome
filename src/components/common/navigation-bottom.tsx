@@ -5,7 +5,8 @@ import Box from '@mui/material/Box';
 const NavigationBottom: React.FC = () => (
   <Box sx={{
     position: 'fixed',
-    bottom: 'env(safe-area-inset-bottom)',
+    bottom: 0,
+    paddingBottom: 'env(safe-area-inset-bottom)',
     width: '100%',
     backgroundColor: '#fff',
     py: 2,
